@@ -4,252 +4,261 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/69_YG2leWstfEqXHyW6-2Vyu9TFUNcoqdK-YCxgj624MaFF4ZCPRJSnXnVKns6Hj7w" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title> Ritesh Kothawade | Web Developer</title>
+    
 </head>
 <body>
 
-    <!-- Header Design -->
-    <header>
-        <a href="#" class="logo">Port<span>fo</span>lio.</a>
 
-        <ul id="nav-menu">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="Ritesh-Kothawade-Resume.pdf" class="nav-link resume" id="res" download>Resume</a></li>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </ul>
-    </header>
+  <header>
+    <a href="#" class="logo"><h2>Ritesh <span style="color: black;">Kothawade</span></h2></a>
 
-    <!-- Home Design -->
-    <section class="nav-link home" id="home">
-        <div class="home-text">
-            <div class="slide">
-                <span class="one">Hello</span>
-                <span class="two">I'm</span>
-            </div>
-            <h1 id="user-detail-name">Ritesh Kothawade</h1>
-            <h3>FULL STACK <span>DEVELOPER</span></h3>
-            <p>Dedicated and Efficient Full Stack Developer with an eager to learn new skills. Aims to leverage knowledge, build premium websites and applications.</p>
-            <div class="contact-icons">
-                <a href="https://github.com/Ritesh20101998"><i class='bx bxl-github' ></i></a>
-                <a href="https://www.linkedin.com/in/ritesh-kothawade-800879270/"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#"><i class='bx bx-phone-call'></i></a>
-                <a href="https://mail.google.com/"><i class='bx bxl-gmail'></i></a>
-            </div>
-            <div class="button">
-                <a href="Ritesh-Kothawade-Resume.pdf" id="resume-button-1" download>Download Resume</a>
-            </div>
-        </div>
-        <div style="margin-left: 50px;">
-            <img style="height:700px;"src="./images/photo.jpeg" alt="">
-        </div>
-    </section>
-    <!-- id="about-img" -->
-    <!-- id="about-text" -->
-    <!-- About section Design -->
-    <section class="nav-link about" id="about">
-        <div class="about">
-            <img src="./images/photo.jpeg" class="home-img" alt="" width="300px" >
-        </div>
+    <ul id="nav-menu" class="navbar">
+      <li><a href="#" class="active nav-link home">Home</a></li>
+      <li><a href="#about" class="nav-link about section">About</a></li>
+      <li><a href="#skills-sec" class="nav-link skills">Skills</a></li>
+      <li><a href="#projects-sec" class="nav-link projects">Projects</a></li>
+      <li><a href="#contact" class="nav-link contact">Contact</a></li>
+      <li> <button onclick="resume()" style="border:none; background-color: white;" id="resume-button-1" >
+        <a href="/Ritesh20101998.github.io/Ritesh-Kothawade-Resume.pdf" target="_blank" class="nav-link resume" id="resume-link-1" download>Resume</a>
+      </button>
+      </li>
+    </ul>
+    <a href="#" class="logo bx bx-menu" id="menu-icon"><span class="material-symbols-outlined">menu</span></a>
+  </header>
 
-        <div class="section">
-            <h2>About <span>Me</span></h2>
-            <h3>Full Stack Developer</h3>
-            <p id="user-detail-intro">An enthusiastic Full Stack Developer, a lifelong learner, skilled in front-end Web Development. High
-                adaptability to learn new technologies quickly and pay attention to details. Aims to leverage
-                knowledge and build premium websites while facilitating the organization in achieving functional
-                goals.
-            </p>
-            <div class="button">
-                <a href="https://drive.google.com/drive/folders/1HuK3k2VspQ6YDro_gOFqGhwdbmut89FP" id="resume-button-2" download>Download Resume</a>
-            </div>
+
+<!-- ******************************************************************************************************* -->
+
+
+  <div class="main-container">
+    <section id="home" class="margin-t-b main-body">
+      <div></div>
+      <div id="user-detail-name" class="home-text">
+        <p>Hello, I’m</p>
+        <h1>Ritesh Kothawade</h1>
+        <p class="node">FULL STACK WEB DEVELOPER 🤖</p>
+        <div class="home-links">
+          <div class="resume" >
+            <button onclick="resume()" style="border: none;" id="resume-button-2" >
+              <a id="resume-link-2"  href="/Ritesh20101998.github.io/Ritesh-Kothawade-Resume.pdf" target="_blank" class="trigger" download>Download Resume</a>
+            </button>
+          </div>
+          <div class="home-social">
+            <a href="https://github.com/Ritesh20101998" id="contact-github" target="_blank">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo5wJDTSaug_z6R_9N2yw9GekcRrkD3A438B8pbDW_PQEzix-SxT16LqvR7unzD4EOwfw&usqp=CAU" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/ritesh-kothawade-800879270" id="contact-linkedin" target="_blank">
+              <img src="https://icons-for-free.com/download-icon-linked+linkedin+social+icon-1320191444164630362_0.svg" alt="">
+            </a>
+          </div>
+        
         </div>
+  
+      </div>
+  
     </section>
 
-    <!-- skills-card section Design -->
-    <section class="nav-link skills" id="skills">
-        <div class="main-text">
-            <p>What I am Expert In</p>
-            <h2><span>My</span> Skills</h2>
+
+<!-- ***************************************************************************************************** -->
+
+
+    <section id="about" class="about section">
+        <div><img src="/Ritesh20101998.github.io/images/photo.jpeg" class="home-img" alt="Ritesh">
         </div>
-        <h1>Tech-Stacks</h1>
-        <div class="skills-card-content">
-            <div class="box" style="padding-top: 12px;">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" >
-                <h2>HTML</h2>
-            </div>
-            <div class="box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" >
-                <h2>CSS</h2>
-            </div>
-            <div class="box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="" width="100%">
-                <h2>JAVASCRIPT</h2>
-            </div>
-            <div class="box" style="padding-top: 8px; background-color: #231f20;">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" alt="" width="100%">
-                <h2>NODE JS</h2>
-            </div>
-            <div class="box" style="padding-top: 10px;background:gray">
-                <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png" alt="" width="100%" ;>
-                <h2>EXPRESS JS</h2>
-            </div>
-            <div class="box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg" alt="" width="100%">
-                <h2>MONGODB</h2>
-            </div>
+        <div>
+          <h1>About Me</h1>
+          <p id="user-detail-intro">An aspiring Full Stack Web Developer with knowledge of 🌐HTML, ✨CSS, ⚙️JavaScript, and Passionate about staying current with the latest web development technologies and constantly enhancing my skills.</p>
+          <a href="#contact">Contact Me</a>
         </div>
-        <br>
-        <br>
-        <h1>Tools</h1>
-        <div class="skills-card-content">
-            <div class="box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" width="100%">
-                <h2>VS CODE</h2>
-            </div>
-            <div class="box">
-                <img src="https://www.svgrepo.com/show/217753/github.svg" alt="" width="100%">
-                <h2>GITHUB</h2>
-            </div>
-            <div class="box">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" width="100%">
-                <h2>GIT</h2>
-            </div>
-            <div class="box">
-                <img src="https://th.bing.com/th/id/OIP.O_5E4UCc8O0gHwvSB6MBBwHaHa?pid=ImgDet&rs=1" alt="" width="100%">
-                <h2>NPM</h2>
-            </div>
-            <div class="box">
-                <img src="https://th.bing.com/th/id/OIP.3EaYtjz6kSe4UgPgqxQEMAHaHa?pid=ImgDet&rs=1" alt="" width="100%" background="none">
-                <h2>Netlify</h2>
-            </div>
-        </div>
-        </div>
+      </section>
+
+
+
+<!-- **************************************************************************************************** -->
+
+
+
+      <section id="skills-sec">
     </section>
-
-    <!-- projects Section Design -->
-    <section class="nav-link projects" id="projects">
-        <div class="main-text">
-            <p>Projects</p>
-            <h2><span>Latest</span> Project</h2>
-        </div>
-        <div class="projects-content">
-            <div class="rows project-card">
-                <img class="home-img" src="Img/ProjectPhoto.png" alt=""/>    
-                <div class="layer">
-                    <h5 class="project-title">DollarTree (Clone)</h5>
-                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor aliquid praesentium cupiditate sapiente culpa incidunt ipsam quisquam ipsa suscipit?</p>
-                    <p class="project-tech-stack">Tech Stacks: HTML | CSS | Javascript</p>
-                    <div class="project-flex">
-                        <a class="project-github-link" href="https://github.com/Ritesh20101998/-big-dolls-5781" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a class="project-deployed-link" href="https://rainbow-jelly-d5aab8.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>    
-            </div>
-            <div class="rows project-card">
-                <img class="home-img" src="Img/ProjectPhoto.png" alt=""/>    
-                <div class="layer">
-                    <h5 class="project-title">DollarTree (Clone)</h5>
-                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor aliquid praesentium cupiditate sapiente culpa incidunt ipsam quisquam ipsa suscipit?</p>
-                    <p class="project-tech-stack">Tech Stacks: HTML | CSS | Javascript</p>
-                    <div class="project-flex">
-                        <a class="project-github-link" href="https://github.com/Ritesh20101998/-violent-market-7865" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a class="project-deployed-link" href="https://spiffy-tapioca-4b2d86.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>    
-            </div>
-            <div class="rows project-card">
-                <img class="home-img" src="Img/ProjectPhoto.png" alt=""/>    
-                <div class="layer">
-                    <h5 class="project-title">DollarTree (Clone)</h5>
-                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor aliquid praesentium cupiditate sapiente culpa incidunt ipsam quisquam ipsa suscipit?</p>
-                    <p class="project-tech-stack">Tech Stacks: HTML | CSS | Javascript</p>
-                    <div class="project-flex">
-                        <a class="project-github-link" href="https://github.com/Ritesh20101998/punchy-crayon-507" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a class="project-deployed-link" href="https://spiffy-kulfi-5b4b0a.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>    
-            </div>
-            <div class="rows project-card">
-                <img class="home-img" src="Img/ProjectPhoto.png" alt=""/>    
-                <div class="layer">
-                    <h5 class="project-title">DollarTree (Clone)</h5>
-                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor aliquid praesentium cupiditate sapiente culpa incidunt ipsam quisquam ipsa suscipit?</p>
-                    <p class="project-tech-stack">Tech Stacks: HTML | CSS | Javascript</p>
-                    <div class="project-flex">
-                        <a class="project-github-link" href="https://github.com/anagpure28/eager-structure-3963" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a class="project-deployed-link" href="https://glittering-cannoli-4f8403.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>    
-            </div>            
-        </div>
-    </section>
-
-    <section class="github" id="github">
-        <div class="main-text">
-            <h2>GIT<span>-HUB</span></h2>
-        </div>
-        <div class="skills-card-content2">
-            <div class="box" id="github-streak-stats" style="background-color: white;">
-                <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ritesh20101998" alt="" width="100%" height="100%">
-            </div>
-            <div class="box" id="github-stats-card" style="background-color: white;">
-                <img src="https://github-readme-stats.vercel.app/api?username=Ritesh20101998" alt="" width="100%" height="100%">
-            </div>
-            <div class="box" id="github-top-langs" style="background-color: white;">
-                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ritesh20101998" alt="" width="100%" height="100%">
-            </div>
-        </div>
-        <div class="react-activity-calendar" >
-            <img class="calendar" src="https://ghchart.rshah.org/Ritesh20101998" alt="">
-        </div>
-    </section>
-
-    <!-- Contact section Design -->
-    <section class="nav-link contact" id="contact">
-        <div class="contact-text">
-            <h2>Contact <span>Me!</span></h2>
-            <h4>If You Have Any Project In Your Mind.</h4>
-            <p>I'm a Web Developer - creating interactive and smooth interface designs for companies all across the world.</p>
-            <div class="list">
-                <li><a href=""><span>Mobile:</span> 9970609200</a></li>
-                <li><a href=""><span>Email: </span> kothawaderitesh2010@gmail.com</a></li>
-            </div>
-            <div class="contact-icons">
-                <a id="contact-github" href="https://github.com/Ritesh20101998"><i class='bx bxl-github' ></i></a>
-                <a id="contact-linkedin" href="https://www.linkedin.com/in/ritesh-kothawade-800879270/"><i class='bx bxl-linkedin' ></i></a>
-                <a id="contact-phone" href="#"><i class='bx bx-phone-call'></i></a>
-                <a id="contact-email" href="https://mail.google.com/"><i class='bx bxl-gmail'></i></a>
-            </div>
-        </div>
-        <div class="contact-form">
-            <form action="">
-                <input type="name" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email Address" required>
-                <input type="" placeholder="Your Mobile Number" required>
-                <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You"></textarea>
-                <input type="submit" value="Send Message" class="submit" required>
-            </form>
-        </div>
-    </section>
-
-    <!-- End Section Design -->
-    <div class="end">
-        <div class="top">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-    </div>
-
-    <!-- custom js link -->
-    <script type="text/javascript"  src="script.js"></script>
     
+    <section id="skills">
+      <h1>Technical Skills</h1>
+      <div class="skills-card">
+        <div class="container grid" id="tech">
+        <div> 
+          <img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" alt="HTML"><p class="skills-card-name">HTML</p>
+        </div>
+        <div>
+          <img class="skills-card-img" src="https://camo.githubusercontent.com/edc736634dd35b0f4008e2f7db456136b9fc0e1e7a4078bb72c7352b1bdf8a7e/68747470733a2f2f776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f6373732d332e737667">CSS</p>
+        </div>
+        <div>
+          <img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"><p class="skills-card-name">JavaScript</p>
+        </div>
+        
+        <div>
+          <img class="skills-card-img" src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" alt="Node.js"><p class="skills-card-name">Node.js</p>
+        </div>
+        <div>
+          <img class="skills-card-img" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png" alt="Express.js"><p class="skills-card-name">Express.js</p>
+        </div>
+        <div>
+          <img class="skills-card-img" src="https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Emblem.jpg" alt="MongoDB"><p class="skills-card-name">MongoDB</p>
+        </div>
+        <div>
+            <img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Socket-io.svg/1024px-Socket-io.svg.png" alt="Socket.io"><p class="skills-card-name">Socket.io</p>
+        </div>
+        
+       <div>
+          <img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt="C++"><p class="skills-card-name">C++</p>
+        </div>
+        <div>
+          <img class="skills-card-img" src="https://cdn-icons-png.flaticon.com/512/2306/2306173.png" alt="SQL"><p class="skills-card-name">SQL</p>
+        </div>
+        <div>
+          <img class="skills-card-img" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"><p class="skills-card-name">GitHub</p>
+        </div>
+        <div> 
+          <img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="VS Code"><p class="skills-card-name">VS Code</p>
+        </div>
+        <div> 
+            <img class="skills-card-img" src="https://ph-files.imgix.net/3f458a19-f754-4e09-8aa5-351c3a45dc38.png?auto=format" alt="Thunder Client"><p class="skills-card-name">Thunder Client</p>
+          </div>
+      </div>
+    </section>
+
+
+
+<!-- ******************************************************************************************************* -->
+
+
+
+    <section id="projects-sec">
+    </section>
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="all-projects">
+        <div class="project-card">
+          <div>
+            <img src="/Ritesh20101998.github.io/images/modesens.png" alt="">
+          </div>
+          <div>
+            <h1 class="project-title" >Clone of Modesens <br>(D-Cart)</h1>
+            <p class="project-description">Modesens is an ecommerce digital platform.</p>
+            <h5  class="project-tech-stack" >Features: Sign-in/Register | all types of Digital Product | add
+                to cart | checkout.</h5>
+            <h5  class="project-tech-stack" >Tech Stack: HTML | CSS | JavaScript</h5>
+            <p>Completed an individual project within a span of five days.</p>
+            <div>
+              <a href="https://rainbow-jelly-d5aab8.netlify.app/" target="_blank" class="project-deployed-link">Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+              <a href="https://github.com/Ritesh20101998/-big-dolls-5781" target="_blank" class="project-github-link" >Code &nbsp;<i
+                class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+       </div>
+        <div class="project-card">
+          <div>
+            <img src="/Ritesh20101998.github.io/images/basspro.png" alt="">
+          </div>
+          <div>
+            <h1 class="project-title" >Clone of Basspro.com <br>(FlexKart)</h1>
+            <p class="project-description">Belk, Inc. is an American department store chain</p>
+            <h5  class="project-tech-stack" >Features: Sign-in/Register | all types of Digital Product | add
+                to cart | checkout.</h5>
+            <h5  class="project-tech-stack" >Tech Stack: HTML | CSS | JavaScript</h5>
+            <p>Completed a group project within a span of five days.</p>
+            <div>
+              <a href="https://spiffy-tapioca-4b2d86.netlify.app/" target="_blank" class="project-deployed-link">Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+              <a href="https://github.com/Ritesh20101998/-violent-market-7865" target="_blank" class="project-github-link" >Code &nbsp;<i
+                class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+       </div>
+       <div class="project-card">
+        <div>
+          <img src="/Ritesh20101998.github.io/images/catherines.png" alt="">
+        </div>
+        <div>
+          <h1 class="project-title" >Clone of Catherines <br>(Rental Mania)</h1>
+          <p class="project-description">Catherines is an online rental platform for women wearables</p>
+          <h5  class="project-tech-stack" >Features:
+
+              Sign-in/Register | all types of home packages | User
+              authentication | add to cart | checkout.</h5>
+          <h5  class="project-tech-stack" >Tech Stack: HTML | CSS | JavaScript</h5>
+          <p>Completed an individual project within a span of five days.</p>
+          <div>
+            <a href="https://spiffy-kulfi-5b4b0a.netlify.app/" target="_blank" class="project-deployed-link">Live &nbsp;<i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+            <a href="https://github.com/Ritesh20101998/punchy-crayon-507" target="_blank" class="project-github-link" >Code &nbsp;<i
+              class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+     </div>  
+    </section>
+
+
+
+    <!-- ***************************************************************************************************** -->
+
+
+
+    <section id="github-sec">
+        <div class="github react-activity-calendar">
+          <h1>GitHub Statistics</h1>
+          <div>
+              <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+              <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+              <div class="calendar react-activity-calenda">
+              </div>
+              <div>
+                <a href="https://github.com/Ritesh20101998" target="_blank"><img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Ritesh20101998&show_icons=true&theme=gotham"></a>
+                  
+                <a href="https://github.com/Ritesh20101998" target="_blank"><img  id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=Ritesh20101998&theme=gotham&hide_border=false"></a>
+              </div>
+              <div>
+                <a href="https://github.com/Ritesh20101998" target="_blank"><img id="github-top-langs"src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ritesh20101998&layout=compact&theme=gotham"></a>
+              </div>      
+          </div>
+         </div>
+      </section>
+
+
+
+<!-- *************************************************************************************************** -->
+
+
+
+     <section id="contact" class="contact-section tag">
+      <h2 class="section-title">Contact</h2>
+      <div>
+             <div id="contact-link" class="contact-link">
+                  
+                    <div>
+                           <a target="_blank" id="contact-github"
+                                  href="https://github.com/Ritesh20101998"><img
+                                         src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                                         alt=""><span>Github</span></a>
+                           <a target="_blank" id="contact-linkedin"
+                                  href="https://www.linkedin.com/in/ritesh-kothawade-800879270/"><img
+                                         src="https://www.iconpacks.net/icons/1/free-linkedin-icon-112-thumb.png"
+                                         alt=""><span>LinkedIn</span></a>
+                            <a target="_blank" id="contact-phone" href="tel:+919970609200"><img
+                                            src="https://static.vecteezy.com/system/resources/previews/010/829/986/original/phone-icon-in-trendy-flat-style-free-png.png" alt=""><span>+91
+                                            9970609200</span></a>
+                           <a target="_blank" id="contact-email"
+                                  href="mailto:kothawaderitesh2010@gmail.com"><img
+                                         src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-email-512.png"
+                                         alt=""><span>kothawaderitesh2010@gmail.com</span></a>
+                    </div>
+             </div>
+      </div>
+</section>
+
+</div>
 </body>
 </html>
+<script src="script.js"></script>
