@@ -24,10 +24,10 @@ menu.addEventListener('click',()=>{
 });
 
 
-GitHubCalendar(".calendar", "KrunalGurao");
-GitHubCalendar(".calendar", "KrunalGurao", { responsive: true });
+GitHubCalendar(".calendar", "Ritesh20101998");
+GitHubCalendar(".calendar", "Ritesh20101998", { responsive: true });
 
 
 function resume(){
-    window.open("https://drive.google.com/file/d/1wZ0iTA-zl_4-bn_NZv5dK4cMWTl9bONX/view?usp=share_link")
+    window.open("https://drive.google.com/file/d/1QwtwUEcaIpY69yenSCvO_EMVYsCE6DV-/view?usp=share_link")
 }

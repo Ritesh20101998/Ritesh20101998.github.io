@@ -31,7 +31,7 @@ header img{
 .logo{
     display: flex;
     align-items: center;
-    color: teal;
+    color: rgb(1, 20, 20);
 }
 
 
@@ -151,7 +151,7 @@ header img{
 }
 .home-card{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    color:teal;
+    color:rgb(21, 128, 0);
     line-height: 1.8rem;
     background-color: white;
     z-index: 100;
@@ -375,6 +375,8 @@ header img{
 
 .contact-section {
     padding: 120px 0px;
+    width:90%;
+    display: flex;
 }
 
 .contact-section>div {
@@ -383,7 +385,7 @@ header img{
     display: flex;
     margin: auto;
     align-items: center;
-    justify-items: center;
+    justify-items: space-between;
     border-radius: 5px;
     background-color: teal;
 }
