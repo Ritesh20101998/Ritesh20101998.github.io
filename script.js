@@ -31,3 +31,13 @@ GitHubCalendar(".calendar", "Ritesh20101998", { responsive: true });
 function resume(){
     window.open("https://drive.google.com/file/d/1QwtwUEcaIpY69yenSCvO_EMVYsCE6DV-/view?usp=share_link")
 }
+
+let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
+let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
+
+function NewTab() {
+    window.open(
+        "https://drive.google.com/file/d/1rO5-y7PLzKe6JJVbWWduynCAHPkk_g1J/view?usp=drive_link",
+        "_blank"
+    );
+}

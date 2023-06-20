@@ -23,10 +23,15 @@
       <li><a href="#skills-sec" class="nav-link skills">Skills</a></li>
       <li><a href="#projects-sec" class="nav-link projects">Projects</a></li>
       <li><a href="#contact-sec" class="nav-link contact">Contact</a></li>
-      <li> <button onclick="resume()" style="border:none; background-color: white;" id="resume-button-1" >
+      <li id="resume-button-1" class="nav-link resume">
+        <a href="Vaibhav-Shevne-Resume.pdf" target="_blank" id="resume-link-1" download="Vaibhav-Shevne-Resume">Resume
+          <i class='bx bxs-download'></i></a>
+      </li>
+
+      <!-- <li> <button onclick="resume()" style="border:none; background-color: white;" id="resume-button-1" >
         <a href="/Ritesh20101998.github.io/Ritesh-Kothawade-Resume.pdf" target="_blank" class="nav-link resume" id="resume-link-1" download>Resume</a>
       </button>
-      </li>
+      </li> -->
     </ul>
     <a href="#" class="logo bx bx-menu" id="menu-icon"><span class="material-symbols-outlined">menu</span></a>
   </header>
@@ -44,9 +49,14 @@
         <p class="node">FULL STACK WEB DEVELOPER 🤖</p>
         <div class="home-links">
           <div class="resume" >
-            <button onclick="resume()" style="border: none;" id="resume-button-2" >
+            <!-- <button onclick="resume()" style="border: none;" id="resume-button-2" >
               <a id="resume-link-2"  href="/Ritesh20101998.github.io/Ritesh-Kothawade-Resume.pdf" target="_blank" class="trigger" download>Download Resume</a>
-            </button>
+            </button> -->
+
+            <li id="resume-button-2">
+              <a href="Vaibhav-Shevne-Resume.pdf" target="_blank" id="resume-link-2" class="button"
+                download="Vaibhav-Shevne-Resume.pdf">Resume <i class='bx bxs-download'></i></a>
+            </li>
           </div>
           <div class="home-social">
             <a href="https://github.com/Ritesh20101998" id="contact-github" target="_blank">
@@ -72,6 +82,9 @@
         </div>
         <div>
           <h1>About Me</h1>
+          <div id="tech-stack" style="display: none;">
+            <h1>html,css,js, node, mongo,sql</h1>
+          </div>
           <p id="user-detail-intro">An enthusiastic Full Stack Developer, a lifelong learner, skilled in front-end Web Development. High adaptability to learn new technologies quickly and pay attention to details.</p>
           <a href="#contact">Contact Me</a>
         </div>
