@@ -129,17 +129,19 @@ header img{
     color:teal;
 }
 .resume{
-    margin: 20px 0;
+    margin: 20px 0px;
 }
 #resume-button-2{
     background: linear-gradient(134deg,teal 0%, teal 99%);
     color: white;
     padding: 7px 9px;
+    margin: auto;
+    text-align: center;
     border-radius: 4px;
     font-size: 20px;
     margin: 10px 0;
     display: block;
-    width: 190px;
+    width: 200px;
 }
 
 #resume-link-2{
@@ -227,8 +229,10 @@ header img{
 
 .skills-card{
     margin-bottom: 20vh;
+    /* border: 1px solid black; */
 }
-#skills-sec, #projects-sec, #contact-sec{
+
+#skills-sec, #projects-sec, #contact{
     height: 12vh;
 }
 
@@ -248,7 +252,7 @@ header img{
 }
 
 #tech>div {
-    width: 50%;
+    width: 60%;
     height: 100%;
     margin: auto;
     display: flex;
@@ -256,11 +260,12 @@ header img{
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 #tech>div>img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
 
 .github>h1{
@@ -288,8 +293,6 @@ header img{
 .github>div>div>img{
     margin: 10px;
 }
-
-
 
 /* ******************************************************************************************************* */
 
@@ -320,10 +323,8 @@ header img{
     justify-content: space-between;
     margin: 40px 0;
 }
-.project-card>div:nth-child(1){
-    
-    width: 60%;
-    
+.project-card>div:nth-child(1){ 
+    width: 60%;  
 }
 .project-card>div:nth-child(1)>img{
     border: 1px solid white;
@@ -372,136 +373,115 @@ header img{
 
 /* ********************************************************************************************************* */
 
-
-.contact-section {
-    padding: 120px 0px;
-    width:90%;
-    display: flex;
-}
-
-.contact-section>div {
-    height: 400px;
-    width: 40%;
-    display: flex;
+#contact {
     margin: auto;
-    align-items: center;
-    justify-items: space-between;
-    border-radius: 5px;
-    background-color: teal;
-}
-
-.contact-link {
-    height: 90%;
     width: 90%;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-items: center;
+    margin-top: 100px;
+    /* height: auto; */
+    /* border: 1px solid black; */
 }
-
-.contact-link>div {
+.ccc1{
+    height: 100px;
+}
+#contact .ccc1 > h1{
+    /* margin: 30px auto; */
+    text-align: center;
+    /* border: 1px solid black; */
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+/* .ccc1{
+    border: 1px solid black;
+} */
+.ccc2{
     margin: auto;
-    width: 80%;
+    display: flex; 
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+.contact-link{
+    width: 50%;
+    padding: 10px;
+    /* border: 1px solid green; */
+}
+.contact-link > div {
+    width: 400px;
+    height: 400px;
+    margin: 30px 50px;
+    background-color: teal;
+    border-radius: 5px;
+    padding: 25px 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 25px;
 }
-
-.contact-link>p {
-    width: 50%;
-    font-size: 22px;
-    color: #ffffff;
-    
-    margin: 20px auto;
-}
-
-.contact-link>div>a {
-    
+.contact-link > div > a {
     display: flex;
     align-items: center;
-    gap: 20px;
+    /* justify-content: space-around; */
+    gap: 10px;
     color: #ffffff;
+    /* border: 1px solid black; */
 }
-
-.contact-link img {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
+.contact-link > div > a > img {
+    width: 35px;
+    /* margin-top: 20px; */
 }
-
-.contact-form {
+.contact-form{
     width: 50%;
-    padding: 30px 0px;
-    display: flex;
-    flex-direction: column;
-    font-size: 22px;
-    color: #ffffff;
-    margin: auto;
+    padding: 10px;
+    /* border: 1px solid blue; */
 }
-
-.contact-form>form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.contact-form>form>input[type="text"],
-.contact-form>form>input[type="email"] {
-    height: 40px;
-    width: 65%;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: auto;
- 
-}
-
-.contact-form>form>input[type="text"]:focus,
-.contact-form>form>input[type="email"]:focus {
-    outline: none;
-}
-
-.contact-form>form>textarea {
-    min-height: 100px;
-    max-width: 65%;
-    min-width: 65%;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: auto;
-}
-
-.contact-form>form>textarea:focus {
-    outline: none;
-}
-
-.contact-form>form>button {
-    margin: auto;
-    height: 40px;
-    width: 40%;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #ebf1f5;
-    color: #616161;
-}
-
-.contact-form>form>button:hover {
-    background-color: #667C89;
-    color: #ffffff;
-}
-.section-title{
+.contact-form > form {
+    width: 400px;
+    height: 400px;
+    margin: 30px 50px;
     text-align: center;
-    font-size: 2.5rem;
-    color: rgb(36, 36, 36);
-    margin-bottom: 30px;
+    background-color: teal;
+    /* border: 1px solid black; */
+    padding: 25px 30px;
+    border-radius: 5px;
 }
+.contact-form > form > input{
+    margin-bottom: 20px;
+    padding: 2px;
+    width: 260px;
+    border-radius: 5px;
+}
+.contact-form > form > .submit{
+    background-color: red;
+    color: #fff;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+}
+/* ****************************************************************************************************** */
 
+.end{
+    width: 100%;
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: teal;
+}
+.top button{
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    border: none;
+}
 
 /* ****************************************************************************************************** */
 
-
 #github-sec{
     height: auto;
+    margin-bottom: 100px;
 }
 
 .github>h1{
