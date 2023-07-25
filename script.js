@@ -29,7 +29,7 @@ GitHubCalendar(".calendar", "Ritesh20101998", { responsive: true });
 
 
 function resume(){
-    window.open("https://drive.google.com/file/d/1syBHHm63ayPlpAQsDrNk9zWb7XRnQGUU/view?usp=sharing")
+    window.open("https://drive.google.com/file/d/1rO5-y7PLzKe6JJVbWWduynCAHPkk_g1J/view?usp=drive_link")
 }
 
 // let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
