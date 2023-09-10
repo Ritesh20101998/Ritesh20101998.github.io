@@ -518,331 +518,365 @@ header img{
 /* **********************************************(Media Query)***************************************** */
 
 
-
-@media (max-width: 1225px) {
-
-    
-    .home-social{
-        background-color: white;
-        padding-top: 10px;
-        border-radius: 5px;
-        display: flex;
-        justify-content:left;
-        
+@media (max-width: 1100px) {
+    header {
+      padding: 16px 2%;
     }
-
-    #home>img{
-        width: 1000px;
-        right: 0;
+  
+    /* Add tablet view styles here */
+    #home > img {
+      width: 1000px;
+      right: 0;
     }
-
-    .home-text h1{
-        font-size: 1.9rem;
-        
+  
+    .home-text h1 {
+      font-size: 1.9rem;
     }
-    .home-text>p{
-        margin-top: 1rem;
-        font-size: 1.3rem;
-
+  
+    .home-text > p {
+      margin-top: 1rem;
+      font-size: 1.3rem;
     }
-    #home>div:nth-child(1){
-        display: none;
+  
+    #home > div:nth-child(1) {
+      display: none;
     }
-    #home{
-        height: auto;
-        margin-bottom: 10px;
+  
+    #about > div:nth-child(1) {
+      width: auto;
+      margin-top: 50px;
     }
-    .node::before{
-        width: auto;
-        height: auto;
-        animation: none;
+  
+    #about > div:nth-child(2) {
+      padding: 0;
+      margin-bottom: 50px;
     }
-    #about{
-        flex-direction: column;
-        height: auto;
-        clip-path: none;
-
+  
+    #about img {
+      width: 50vw;
     }
-    #about>div:nth-child(1){
-        width: auto;
-        margin-top: 50px;
-    }
-    #about>div:nth-child(2){
-        padding: 0;
-        margin-bottom: 50px;
-    }
-    #about img{
-        width: 50vw;
-    }
-
+  
     #tech {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        /* border:1px solid black; */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
     }
-
-    #contact>div{
-        flex-direction: column;
+  
+    #contact > div {
+      flex-direction: column;
     }
-    .personal-info{
-        width: 100%;
+  
+    .personal-info {
+      width: 100%;
     }
-    .send-info>div{
-        width: 90%;
+  
+    .personal-info > div {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      padding: 50px 0;
+      width: 90%;
+      border-radius: 10px;
+      height: 100%;
+      margin: 30px auto;
+      background-color: white;
     }
-
-    .calendar{
-        width: 100vw;
+  
+    .personal-info > div > div {
+      margin: 25px 30px;
     }
-    .github>div>div img{
-        width: 100%;
+  
+    .personal-info > div > div > p {
+      margin: 5px 10px;
+      font-size: 12px;
     }
-    footer>div:nth-child(2){
-        font-size: 14px;
+  
+    .info-head {
+      display: flex;
+      font-size: 12px;
+      align-items: center;
+      margin: 5px 10px;
+      color: teal;
     }
-
-    .project-card{
-        flex-direction: column;
+  
+    .info-head > i {
+      margin-right: 8px;
+      font-size: 12px;
     }
-
-    .project-card>div:nth-child(1){
-        width: 100%;
-
+  
+    .send-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    .project-card>div:nth-child(2){
-        width: 100%;
-
+  
+    .send-info > div {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      background-color: white;
+      border-radius: 10px;
+      width: 50%;
+      margin: 20px auto;
+      height: 100%;
     }
-    .project-card>div:nth-child(2) a{
-        display: block;
-        margin-top: 5px;
+  
+    .input-box {
+      border-radius: 20px;
+      background-color: #273036;
+      margin: 15px 20px;
     }
-    header{
-        padding: 16px 2%;
-        transition: .2s;
-        display: flex;
-        justify-content: space-around;
+  
+    .input-box:first-child {
+      margin-top: 20px;
     }
-    .all-projects{
-        width: 95%;
+  
+    .input-box > p {
+      padding: 10px 15px 0px;
+      font-size: 14px;
+      color: teal;
     }
-
-    .project-card{
-        flex-direction: column;
-        width: 100%;
+  
+    .input-box > input,
+    .input-box > textarea {
+      background-color: #273036;
+      border: none;
+      resize: none;
+      border-radius: 20px;
+      font-size: 14px;
+      padding: 0px 15px 10px;
+      color: white;
+      width: 100%;
+      box-sizing: border-box;
     }
-
-    .project-card>div:nth-child(1){
-        width: 100%;
-
+  
+    .input-box > input:focus,
+    .input-box > textarea:focus {
+      outline: none;
     }
-    .project-card>div:nth-child(2){
-        width: 100%;
-        margin: 0px;
-        font-size: 14px;
-
-
-    }
-    .project-card>div:nth-child(2) a{
-        width: 50%;
-        margin: auto;
-        margin-top: 5px;
-    }
-
-}
-
-
-@media (max-width: 724px){
-
-    #menu-icon{
-        display: block;
-    }
-
-    #nav-menu{
-        position: absolute;
-        top: 0;
-        margin-top: 60px;
-        display: none;
-        width: 50%;
-        background: rgb(255, 255, 255);
-        height: auto;
-        transition: all .50s ease;
-    }
-    
-    #nav-menu a{
-        display: block;
-        margin: 8px 0;
-        padding: 0 25px;
-        transition: all 1 ease;
-    }
-    #nav-menu a.active{
-        color: rgb(63, 63, 63); 
-    }
-
-    #nav-menu a:hover{
-    color: rgb(63, 63, 63);
-    transform: translateY(2px);
-    }
-
-    #nav-menu a.active{
-        color: rgb(10, 10, 10);    
-    }
-
-    #nav-menu.open{
-    width: 100%;
-    top: 70;
-    display: block;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    }
-
-    .main-body{
-        flex-direction: column;
-    }
-    .all-projects{
-        width: 95%;
-    }
-
-    .project-card{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .project-card>div:nth-child(1){
-        width: 100%;
-
-    }
-    .project-card>div:nth-child(2){
-        width: 100%;
-        margin: 0px;
-        font-size: 14px;
-
-
-    }
-    .project-card>div:nth-child(2) a{
-        width: 50%;
-        margin: auto;
-        margin-top: 5px;
-    }
-    #contact{
-        margin-bottom:40px;
-       
-    }
-    #contact > h1 {
-        margin-top: 20px;
-    }
-    #contact > h1 , #contact>p{
-        text-align: center;
-    }
-    
-    #contact>div{
-        /* width:90%; */
-        background-color: teal;
-        margin:40px auto;
-        display: flex;
-        flex-direction: column;
-        border-radius: 10px;
-        justify-content: space-evenly;
-    }
-    
-    .personal-info{
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .personal-info>div{
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        padding: 50px 0;
-        width:90%;
-        border-radius: 10px;
-        height:100%;
-        margin:30px auto;
-        background-color: white;
-    }
-    .personal-info>div>div{
-        margin:25px 30px;
-    }
-    .personal-info>div>div>p{
-        margin: 5px 10px;
-        font-size: 12px;
-    }
-    
-    .info-head{
-        display: flex;
-        font-size: 12px;
-        align-items: center;
-        margin: 5px 10px;
-        color:teal;
-    }
-    .info-head>i{
-        margin-right: 8px;
-        font-size: 12px;
-    }
-   
-    .send-info{
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .send-info>div{
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        background-color:white;
-        border-radius: 10px;
-        width:50%;
-        margin:20px auto;
-        height: 100%;
-    
-    }
-    .input-box{
-        border-radius:20px ;
-        background-color: #273036;
-        margin: 15px 20px;
-    }
-    .input-box:first-child{
-        margin-top:20px;
-    }
-    
-    .input-box>p{
-        padding: 10px 15px 0px;
-        font-size: 14px;
-        color: teal;
-    }
-    .input-box>input ,.input-box>textarea {
-        background-color: #273036;
-        border: none;
-        resize: none;
-        border-radius:20px ;
-        font-size: 14px;
-        padding:0px 15px 10px;
-        color:white;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .input-box>input:focus , .input-box>textarea:focus{
-        outline: none;
-    }
+  
     .submit-btn {
-        margin: 15px 20px 20px;
+      margin: 15px 20px 20px;
     }
-    .submit-btn > button{
-        font-size: 12px;
-        padding: 6px 10px;
-        background-color: teal;
-        border: 2px solid teal;
-        color:white;
-        border-radius: 8px;
-        cursor: pointer;
-        user-select: none;
+  
+    .submit-btn > button {
+      font-size: 12px;
+      padding: 6px 10px;
+      background-color: teal;
+      border: 2px solid teal;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      user-select: none;
     }
-    .submit-btn > button:hover{
-       
-        background-color: white;
-        border: 2px solid teal;
-        color:teal;
+  
+    .submit-btn > button:hover {
+      background-color: white;
+      border: 2px solid teal;
+      color: teal;
+    }
+  }
+  
+  /* Media Query for Mobile View (max-width: 600px) */
+  @media (max-width: 600px) {
+    header {
+      padding: 16px 2%;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    /* Add mobile view styles here */
+    #nav-menu {
+      width: 100%;
+      top: 70px;
+    }
+  
+    #nav-menu a {
+      display: block;
+      margin: 8px 0;
+      padding: 0 25px;
+      transition: all 1s ease;
+    }
+  
+    #nav-menu a.active {
+      color: rgb(63, 63, 63);
+    }
+  
+    #nav-menu a:hover {
+      color: rgb(63, 63, 63);
+      transform: translateY(2px);
+    }
+  
+    #nav-menu a.active {
+      color: rgb(10, 10, 10);
+    }
+  
+    #nav-menu.open {
+      width: 100%;
+      top: 70;
+      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  
+    .main-body {
+      flex-direction: column;
+    }
+  
+    .all-projects {
+      width: 95%;
+    }
+  
+    .project-card {
+      flex-direction: column;
+    }
+  
+    .project-card > div:nth-child(1) {
+      width: 100%;
+    }
+  
+    .project-card > div:nth-child(2) {
+      width: 100%;
+      margin: 0px;
+      font-size: 14px;
+    }
+  
+    .project-card > div:nth-child(2) a {
+      width: 50%;
+      margin: auto;
+      margin-top: 5px;
+    }
+  
+    #contact {
+      margin-bottom: 40px;
+    }
+  
+    #contact > h1 {
+      margin-top: 20px;
+    }
+  
+    #contact > h1,
+    #contact > p {
+      text-align: center;
+    }
+  
+    #contact > div {
+      /* width:90%; */
+      background-color: teal;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      justify-content: space-evenly;
+    }
+  
+    .personal-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .personal-info > div {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      padding: 50px 0;
+      width: 90%;
+      border-radius: 10px;
+      height: 100%;
+      margin: 30px auto;
+      background-color: white;
+    }
+  
+    .personal-info > div > div {
+      margin: 25px 30px;
+    }
+  
+    .personal-info > div > div > p {
+      margin: 5px 10px;
+      font-size: 12px;
+    }
+  
+    .info-head {
+      display: flex;
+      font-size: 12px;
+      align-items: center;
+      margin: 5px 10px;
+      color: teal;
+    }
+  
+    .info-head > i {
+      margin-right: 8px;
+      font-size: 12px;
+    }
+  
+    .send-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .send-info > div {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      background-color: white;
+      border-radius: 10px;
+      width: 50%;
+      margin: 20px auto;
+      height: 100%;
+    }
+  
+    .input-box {
+      border-radius: 20px;
+      background-color: #273036;
+      margin: 15px 20px;
+    }
+  
+    .input-box:first-child {
+      margin-top: 20px;
+    }
+  
+    .input-box > p {
+      padding: 10px 15px 0px;
+      font-size: 14px;
+      color: teal;
+    }
+  
+    .input-box > input,
+    .input-box > textarea {
+      background-color: #273036;
+      border: none;
+      resize: none;
+      border-radius: 20px;
+      font-size: 14px;
+      padding: 0px 15px 10px;
+      color: white;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .input-box > input:focus,
+    .input-box > textarea:focus {
+      outline: none;
+    }
+  
+    .submit-btn {
+      margin: 15px 20px 20px;
+    }
+  
+    .submit-btn > button {
+      font-size: 12px;
+      padding: 6px 10px;
+      background-color: teal;
+      border: 2px solid teal;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+  
+    .submit-btn > button:hover {
+      background-color: white;
+      border: 2px solid teal;
+      color: teal;
     }
 }
