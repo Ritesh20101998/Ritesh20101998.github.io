@@ -1,5 +1,4 @@
 
-
 let menu=document.getElementById("menu-icon");
 let navbar=document.querySelector(".navbar");
 let m=document.querySelector(".main-body")
@@ -29,7 +28,7 @@ GitHubCalendar(".calendar", "Ritesh20101998", { responsive: true });
 
 
 function resume(){
-    window.open("https://drive.google.com/file/d/1rO5-y7PLzKe6JJVbWWduynCAHPkk_g1J/view?usp=drive_link")
+    window.open("https://drive.google.com/file/d/1-OuJtg1UY7gNKb9LxGBAmiV-2Gnzfg0-/view?usp=sharing")
 }
 
 // let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
@@ -37,7 +36,24 @@ function resume(){
 
 // function NewTab() {
 //     window.open(
-//         "https://drive.google.com/file/d/1rO5-y7PLzKe6JJVbWWduynCAHPkk_g1J/view?usp=drive_link",
+//         "https://drive.google.com/file/d/1-OuJtg1UY7gNKb9LxGBAmiV-2Gnzfg0-/view?usp=sharing",
 //         "_blank"
 //     );
 // }
+
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "kothawaderitesh2010@gmail.com",
+        Password : "Ritesh$2010",
+        To : 'kothawaderp@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact form Enquiry",
+        Body : "Name : " + document.getElementById('name').value
+        + "<br> Email : " + document.getElementById('email').value
+        + "<br> Phone Number : " + document.getElementById('phone').value
+        + "<br> Message : " + document.getElementById('message').value
+    }).then(
+      message => alert('Message Sent successfully')
+    );
+}
