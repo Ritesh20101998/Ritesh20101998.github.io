@@ -340,7 +340,10 @@ header img{
     width: 38%;
     padding: 0 20px;
 }
-.project-card>div:nth-child(2)>h1,.project-card>div:nth-child(2)>p,.project-card>div:nth-child(2)>h5,.project-card>div:nth-child(2)>a{
+.project-card>div:nth-child(2)>h1,
+.project-card>div:nth-child(2)>p,
+.project-card>div:nth-child(2)>h5,
+.project-card>div:nth-child(2)>a{
     margin: 15px 0;
     font-size: 1.1rem;
     color: white;
@@ -376,7 +379,7 @@ header img{
 #contact {
     margin: auto;
     width: 90%;
-    margin-top: 100px;
+    margin-top: 150px;
     /* height: auto; */
     /* border: 1px solid black; */
 }
@@ -486,7 +489,7 @@ header img{
 
 #github-sec{
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .github>h1{
@@ -530,12 +533,12 @@ header img{
     }
   
     .home-text h1 {
-      font-size: 1.9rem;
+      font-size: 2.5rem;
     }
   
     .home-text > p {
       margin-top: 1rem;
-      font-size: 1.3rem;
+      font-size: 1.8rem;
     }
   
     #home > div:nth-child(1) {
@@ -561,6 +564,21 @@ header img{
       grid-template-columns: repeat(3, 1fr);
     }
   
+    .all-projects{
+      /* border: 1px solid black; */
+    }
+    .project-card{
+      flex-direction: column;
+      border: 1px solid black;
+    }
+    .project-img{
+      margin: auto;
+      text-align: center;
+      width: 250px;
+      border: 1px solid black;
+    }
+    
+
     #contact > div {
       flex-direction: column;
     }
@@ -675,7 +693,7 @@ header img{
   }
   
   /* Media Query for Mobile View (max-width: 600px) */
-  @media (max-width: 600px) {
+  @media (max-width:720px) {
     header {
       padding: 16px 2%;
       display: flex;
