@@ -7,6 +7,7 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
+    
 }
 
 header{
@@ -227,6 +228,7 @@ header img{
     border: solid white 3px;
 }
 
+/* Skills here */
 .skills-card{
     margin-bottom: 20vh;
     /* border: 1px solid black; */
@@ -356,7 +358,7 @@ header img{
     border: none;
     background-color: white;
     color: #10151a;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     cursor: pointer;
 }
 
@@ -519,7 +521,7 @@ header img{
 /* **********************************************(Media Query)***************************************** */
 
 
-@media screen and(max-width: 1100px) {
+@media (max-width: 1100px) {
     header {
       padding: 16px 2%;
     }
@@ -531,21 +533,18 @@ header img{
     }
   
     .home-text h1 {
-      font-size: 1.8rem;
+      font-size: 2.5rem;
     }
   
     .home-text > p {
       margin-top: 1rem;
-      font-size: 1.4rem;
+      font-size: 1.8rem;
     }
   
     #home > div:nth-child(1) {
       display: none;
     }
   
-    #about{
-      flex-direction: column;
-    }
     #about > div:nth-child(1) {
       width: auto;
       margin-top: 50px;
@@ -607,50 +606,223 @@ header img{
     .contact-form,.contact-link{
       width: 80%;
     }
-  }
+}
   
-  /* Media Query for Mobile View (max-width: 600px) */
-  @media screen and(max-width:720px) {
+/* Media Query for Mobile View (max-width: 720px) */
+@media (max-width:720px) {
+    header {
+        padding: 16px 2%;
+    }
+    #home > img {
+      width: 1000px;
+        right: 0;
+    }
+    
+    .home-text h1 {
+      font-size: 2.5rem;
+    }
+    
+    .home-text > p {
+      margin-top: 1rem;
+      font-size: 1.8rem;
+    }
+    
+    #home > div:nth-child(1) {
+      display: none;
+    }
+    #about{
+        flex-direction: column;
+    }
+    #about > div:nth-child(1) {
+      width: auto;
+      margin-top: 50px;
+    }
+    
+    #about > div:nth-child(2) {
+      padding: 0;
+      margin-bottom: 50px;
+    }
+    
+    #about img {
+      width: 50vw;
+    }
+    
+    #tech {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #tech>div>img {
+        width: 100px;
+        height: 100px;
+    }
+    /* projects starts here */
     .project-card{
-      display: flex;
-      flex-direction: column;
-      /* border: 1px solid black; */
-      margin: 10px;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        margin: 10px;
     }
     .project-img{
-      margin: auto;
-      text-align: center;
-      width: 90%;
-      /* border: 1px solid black; */
+        margin: auto;
+        text-align: center;
+        /* width: 90%; */
+        height: 300px;
+        /* border: 1px solid black; */
     }
+    /* .project-img> img{
+        height:500px;
+    } */
     .project-desc{
-      margin: auto;
-      text-align: center;
-      width: 90%;
-      /* border:1px solid black; */
+        margin: auto;
+        text-align: center;
+        width: 90%;
+        /* border:1px solid black; */
     }
     .project-card>div:nth-child(1){ 
-      width: 100%;  
+        width: 100%;  
     }
     .project-card>div:nth-child(2){
-      width: 90%;
-      text-align: center;
-      margin: 10px 10px;
-      padding: 0 10px;
+        width: 90%;
+        text-align: center;
+        margin: 10px 10px;
+        padding: 0 10px;
     }
     /* projects ends here */
-
+  
     #github-sec{
-      margin: auto;
-      text-align: center;
+        margin: auto;
+        text-align: center;
     }
     #contact > div {
-      flex-direction: column;
+        flex-direction: column;
     }
     .ccc2{
-      flex-direction: column;
+        flex-direction: column;
     }
     .contact-form,.contact-link{
-      width: 80%;
+        width: 90%;
+    }
+    .contact-link > div > a{
+        flex-direction: column;
+    }
+    .contact-form > form > input, textarea{
+        width:90%;
+    }
+}
+
+/* Media Query for Mobile View (max-width: 430px) */
+@media (max-width:430px) {
+    *{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    header {
+        padding: 16px 2%;
+    }
+    
+    
+    .home-text h1 {
+      font-size: 2.5rem;
+    }
+    
+    .home-text > p {
+      margin-top: 1rem;
+      font-size: 1.8rem;
+    }
+    
+    #home > div:nth-child(1) {
+      display: none;
+    }
+    #about{
+        margin: auto;
+        text-align: center;
+        flex-direction: column;
+    }
+    #about > div:nth-child(1) {
+      width: auto;
+      margin-top: 50px;
+    }
+    
+    #about > div:nth-child(2) {
+      padding: 0;
+      margin-bottom: 50px;
+    }
+    
+    #about img {
+      width: 50vw;
+    }
+    
+    #tech {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    #tech>div>img {
+        width: 130px;
+        height: 130px;
+    }
+    /* projects starts here */
+    #projects{
+        margin: auto;
+        text-align: center;
+    }
+    .all-projects{
+        width: 100%;
+    }
+    .project-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        margin-top: 10px;
+    }
+    .project-img{
+        margin: auto;
+        text-align: center;
+        /* width: 90%; */
+        height: 300px;
+        /* border: 1px solid black; */
+    }
+    /* .project-img> img{
+        height:500px;
+    } */
+    .project-desc{
+        margin: auto;
+        text-align: center;
+        width: 90%;
+        /* border:1px solid black; */
+    }
+    .project-card>div:nth-child(1){ 
+        width: 100%;  
+    }
+    .project-card>div:nth-child(2){
+        width: 90%;
+        text-align: center;
+        margin: 10px 10px;
+        padding: 0 10px;
+    }
+    /* projects ends here */
+  
+    #github-sec{
+        margin: auto;
+        text-align: center;
+    }
+    #contact > div {
+        flex-direction: column;
+    }
+    .ccc2{
+        flex-direction: column;
+    }
+    .contact-form,.contact-link{
+        width: 100%;
+    }
+    .contact-link > div{
+        padding: 25px 25px;
+    }
+    .contact-link > div > a{
+        flex-direction: column;
+    }
+    .contact-form > form > input, textarea{
+        width:90%;
     }
 }
