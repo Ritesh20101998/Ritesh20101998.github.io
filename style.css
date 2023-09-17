@@ -333,11 +333,9 @@ header img{
     border-radius: 5px;
 }
 .project-card>div:nth-child(2){
-    
     width: 40%;
     text-align: center;
     margin: 0px 20px;
-    width: 38%;
     padding: 0 20px;
 }
 .project-card>div:nth-child(2)>h1,
@@ -402,26 +400,26 @@ header img{
     display: flex; 
     width: 100%;
     padding: 10px;
-    /* border: 1px solid red; */
 }
 .contact-link{
-    /* width: 50%; */
-    padding: 10px;
-    margin: auto;
-    text-align: center;
+  width: 60%;
+  padding: 30px;
+  margin: auto;
+  text-align: center;
     /* border: 1px solid black; */
 }
 .contact-link > div {
-    width: 80%;
+    width: 100%;
     height: 400px;
-    margin: 30px 30px;
+    margin: auto;
+    text-align: center;
     background-color: teal;
     border-radius: 5px;
-    padding: 25px 30px;
+    padding: 25px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 25px;
+    gap: 10px;
 }
 .contact-link > div > a {
     display: flex;
@@ -436,23 +434,23 @@ header img{
     /* margin-top: 20px; */
 }
 .contact-form{
-    margin: auto;
-    text-align: center;
-    /* width: 50%; */
-    padding: 10px;
-    /* border: 1px solid blue; */
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  padding: 30px;
+  /* border: 1px solid blue; */
 }
 .contact-form > form {
-    width: 80%;
+    width: 100%;
     height: 400px;
-    margin: 30px 40px;
+    margin: 30px 0px;
     text-align: center;
     background-color: teal;
     /* border: 1px solid black; */
     padding: 25px 30px;
     border-radius: 5px;
 }
-.contact-form > form > input{
+.contact-form > form > input,textarea{
     margin-bottom: 20px;
     padding: 5px;
     width: 260px;
@@ -521,7 +519,7 @@ header img{
 /* **********************************************(Media Query)***************************************** */
 
 
-@media (max-width: 1100px) {
+@media screen and(max-width: 1100px) {
     header {
       padding: 16px 2%;
     }
@@ -533,18 +531,21 @@ header img{
     }
   
     .home-text h1 {
-      font-size: 2.5rem;
+      font-size: 1.8rem;
     }
   
     .home-text > p {
       margin-top: 1rem;
-      font-size: 1.8rem;
+      font-size: 1.4rem;
     }
   
     #home > div:nth-child(1) {
       display: none;
     }
   
+    #about{
+      flex-direction: column;
+    }
     #about > div:nth-child(1) {
       width: auto;
       margin-top: 50px;
@@ -563,338 +564,93 @@ header img{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
-  
-    .all-projects{
-      /* border: 1px solid black; */
-    }
+  /* projects starts here */
     .project-card{
+      display: flex;
       flex-direction: column;
-      border: 1px solid black;
+      /* border: 1px solid black; */
+      margin: 10px;
     }
     .project-img{
       margin: auto;
       text-align: center;
-      width: 250px;
-      border: 1px solid black;
+      width: 90%;
+      /* border: 1px solid black; */
     }
-    
+    .project-desc{
+      margin: auto;
+      text-align: center;
+      width: 90%;
+      /* border:1px solid black; */
+    }
+    .project-card>div:nth-child(1){ 
+      width: 100%;  
+    }
+    .project-card>div:nth-child(2){
+      width: 90%;
+      text-align: center;
+      margin: 10px 10px;
+      padding: 0 10px;
+    }
+    /* projects ends here */
 
+    #github-sec{
+      margin: auto;
+      text-align: center;
+    }
     #contact > div {
       flex-direction: column;
     }
-  
-    .personal-info {
-      width: 100%;
-    }
-  
-    .personal-info > div {
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      padding: 50px 0;
-      width: 90%;
-      border-radius: 10px;
-      height: 100%;
-      margin: 30px auto;
-      background-color: white;
-    }
-  
-    .personal-info > div > div {
-      margin: 25px 30px;
-    }
-  
-    .personal-info > div > div > p {
-      margin: 5px 10px;
-      font-size: 12px;
-    }
-  
-    .info-head {
-      display: flex;
-      font-size: 12px;
-      align-items: center;
-      margin: 5px 10px;
-      color: teal;
-    }
-  
-    .info-head > i {
-      margin-right: 8px;
-      font-size: 12px;
-    }
-  
-    .send-info {
-      width: 100%;
-      display: flex;
+    .ccc2{
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
     }
-  
-    .send-info > div {
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      background-color: white;
-      border-radius: 10px;
-      width: 50%;
-      margin: 20px auto;
-      height: 100%;
-    }
-  
-    .input-box {
-      border-radius: 20px;
-      background-color: #273036;
-      margin: 15px 20px;
-    }
-  
-    .input-box:first-child {
-      margin-top: 20px;
-    }
-  
-    .input-box > p {
-      padding: 10px 15px 0px;
-      font-size: 14px;
-      color: teal;
-    }
-  
-    .input-box > input,
-    .input-box > textarea {
-      background-color: #273036;
-      border: none;
-      resize: none;
-      border-radius: 20px;
-      font-size: 14px;
-      padding: 0px 15px 10px;
-      color: white;
-      width: 100%;
-      box-sizing: border-box;
-    }
-  
-    .input-box > input:focus,
-    .input-box > textarea:focus {
-      outline: none;
-    }
-  
-    .submit-btn {
-      margin: 15px 20px 20px;
-    }
-  
-    .submit-btn > button {
-      font-size: 12px;
-      padding: 6px 10px;
-      background-color: teal;
-      border: 2px solid teal;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-      user-select: none;
-    }
-  
-    .submit-btn > button:hover {
-      background-color: white;
-      border: 2px solid teal;
-      color: teal;
+    .contact-form,.contact-link{
+      width: 80%;
     }
   }
   
   /* Media Query for Mobile View (max-width: 600px) */
-  @media (max-width:720px) {
-    header {
-      padding: 16px 2%;
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    /* Add mobile view styles here */
-    #nav-menu {
-      width: 100%;
-      top: 70px;
-    }
-  
-    #nav-menu a {
-      display: block;
-      margin: 8px 0;
-      padding: 0 25px;
-      transition: all 1s ease;
-    }
-  
-    #nav-menu a.active {
-      color: rgb(63, 63, 63);
-    }
-  
-    #nav-menu a:hover {
-      color: rgb(63, 63, 63);
-      transform: translateY(2px);
-    }
-  
-    #nav-menu a.active {
-      color: rgb(10, 10, 10);
-    }
-  
-    #nav-menu.open {
-      width: 100%;
-      top: 70;
-      display: block;
+  @media screen and(max-width:720px) {
+    .project-card{
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      /* border: 1px solid black; */
+      margin: 10px;
     }
-  
-    .main-body {
-      flex-direction: column;
-    }
-  
-    .all-projects {
-      width: 95%;
-    }
-  
-    .project-card {
-      flex-direction: column;
-    }
-  
-    .project-card > div:nth-child(1) {
-      width: 100%;
-    }
-  
-    .project-card > div:nth-child(2) {
-      width: 100%;
-      margin: 0px;
-      font-size: 14px;
-    }
-  
-    .project-card > div:nth-child(2) a {
-      width: 50%;
+    .project-img{
       margin: auto;
-      margin-top: 5px;
+      text-align: center;
+      width: 90%;
+      /* border: 1px solid black; */
     }
-  
-    #contact {
-      margin-bottom: 40px;
+    .project-desc{
+      margin: auto;
+      text-align: center;
+      width: 90%;
+      /* border:1px solid black; */
     }
-  
-    #contact > h1 {
-      margin-top: 20px;
+    .project-card>div:nth-child(1){ 
+      width: 100%;  
     }
-  
-    #contact > h1,
-    #contact > p {
+    .project-card>div:nth-child(2){
+      width: 90%;
+      text-align: center;
+      margin: 10px 10px;
+      padding: 0 10px;
+    }
+    /* projects ends here */
+
+    #github-sec{
+      margin: auto;
       text-align: center;
     }
-  
     #contact > div {
-      /* width:90%; */
-      background-color: teal;
-      margin: 40px auto;
-      display: flex;
       flex-direction: column;
-      border-radius: 10px;
-      justify-content: space-evenly;
     }
-  
-    .personal-info {
-      width: 100%;
-      display: flex;
+    .ccc2{
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
     }
-  
-    .personal-info > div {
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      padding: 50px 0;
-      width: 90%;
-      border-radius: 10px;
-      height: 100%;
-      margin: 30px auto;
-      background-color: white;
-    }
-  
-    .personal-info > div > div {
-      margin: 25px 30px;
-    }
-  
-    .personal-info > div > div > p {
-      margin: 5px 10px;
-      font-size: 12px;
-    }
-  
-    .info-head {
-      display: flex;
-      font-size: 12px;
-      align-items: center;
-      margin: 5px 10px;
-      color: teal;
-    }
-  
-    .info-head > i {
-      margin-right: 8px;
-      font-size: 12px;
-    }
-  
-    .send-info {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .send-info > div {
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      background-color: white;
-      border-radius: 10px;
-      width: 50%;
-      margin: 20px auto;
-      height: 100%;
-    }
-  
-    .input-box {
-      border-radius: 20px;
-      background-color: #273036;
-      margin: 15px 20px;
-    }
-  
-    .input-box:first-child {
-      margin-top: 20px;
-    }
-  
-    .input-box > p {
-      padding: 10px 15px 0px;
-      font-size: 14px;
-      color: teal;
-    }
-  
-    .input-box > input,
-    .input-box > textarea {
-      background-color: #273036;
-      border: none;
-      resize: none;
-      border-radius: 20px;
-      font-size: 14px;
-      padding: 0px 15px 10px;
-      color: white;
-      width: 100%;
-      box-sizing: border-box;
-    }
-  
-    .input-box > input:focus,
-    .input-box > textarea:focus {
-      outline: none;
-    }
-  
-    .submit-btn {
-      margin: 15px 20px 20px;
-    }
-  
-    .submit-btn > button {
-      font-size: 12px;
-      padding: 6px 10px;
-      background-color: teal;
-      border: 2px solid teal;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-      user-select: none;
-    }
-  
-    .submit-btn > button:hover {
-      background-color: white;
-      border: 2px solid teal;
-      color: teal;
+    .contact-form,.contact-link{
+      width: 80%;
     }
 }
