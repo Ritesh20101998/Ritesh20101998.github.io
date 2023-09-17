@@ -22,6 +22,14 @@ menu.addEventListener('click',()=>{
     }
 });
 
+function myFunction() {
+    var x = document.getElementById("nav-menu");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+}
 
 GitHubCalendar(".calendar", "Ritesh20101998");
 GitHubCalendar(".calendar", "Ritesh20101998", { responsive: true });

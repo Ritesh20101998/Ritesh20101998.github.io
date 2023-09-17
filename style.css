@@ -35,9 +35,9 @@ header img{
     color: rgb(1, 20, 20);
 }
 
-
 #nav-menu{
     display: flex;
+    float: right;
     align-items: center;
 }
 
@@ -57,7 +57,9 @@ header img{
 #nav-menu a.active{
     color: #10151a;
 }
-
+.navbar .icon{
+    display: none;
+}
 #menu-icon{
     cursor: pointer;
     z-index: 1001;
@@ -612,12 +614,51 @@ header img{
 @media (max-width:720px) {
     header {
         padding: 16px 2%;
+        flex-direction: column;
     }
     #home > img {
       width: 1000px;
         right: 0;
     }
-    
+    header > a{
+        border-bottom: 1px solid black;
+    }
+    .navbar{
+        flex-direction: column;
+        padding: 10px;
+        float: left;
+    }
+    /* .navbar li{
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 50px;
+        top: 20px;
+    }
+    .navbar.responsive li {
+        float: none;
+        display: block;
+        background-color: black;
+        color: white;
+        text-align: left;
+    } */
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar {
+        display: block;
+        /* float: none; */
+    }
     .home-text h1 {
       font-size: 2.5rem;
     }
@@ -720,8 +761,14 @@ header img{
     header {
         padding: 16px 2%;
     }
-    
-    
+    #home{
+        margin-top: 200px;
+        height: 65vh;
+    }
+    #resume-button-2{
+        margin: auto;
+        text-align: center;
+    }
     .home-text h1 {
       font-size: 2.5rem;
     }
@@ -801,6 +848,14 @@ header img{
         margin: 10px 10px;
         padding: 0 10px;
     }
+    .deploy-links{
+        border:1px solid red;
+        display: flex;
+        flex-direction: column;
+    }
+    .deploy-links > a{
+        margin: 10px;
+    }
     /* projects ends here */
   
     #github-sec{
@@ -824,5 +879,8 @@ header img{
     }
     .contact-form > form > input, textarea{
         width:90%;
+    }
+    .contact-form > form > h1{
+        font-size: 14px;
     }
 }
