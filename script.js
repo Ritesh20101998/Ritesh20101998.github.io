@@ -36,7 +36,7 @@ GitHubCalendar(".calendar", "Ritesh20101998", { responsive: true });
 
 
 function resume(){
-    window.open("https://drive.google.com/file/d/1-OuJtg1UY7gNKb9LxGBAmiV-2Gnzfg0-/view?usp=sharing")
+    window.open("https://drive.google.com/file/d/1aB0sJXQom6RrLbDu7iAs1ljX-JkDS5iQ/view?usp=sharing")
 }
 
 // let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
