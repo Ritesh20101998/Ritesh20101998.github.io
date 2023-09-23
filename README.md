@@ -12,7 +12,7 @@
       </p>
  
  
-<!-- <img align="right" width=200px height=250px alt="side_sticker"
+ <img align="right" width=200px height=250px alt="side_sticker"
   src="https://media.giphy.com/media/TEnXkcsHrP4YedChhA/giphy.gif" />
   <br />
   
@@ -21,7 +21,7 @@
   [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Ritesh20101998&theme=github-dark&hide_border=true&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
   <br />
   <br />
-  </p> -->
+  </p>
   
   <p>
     <a href="https://github.com/Ritesh20101998"><span>
