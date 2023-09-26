@@ -758,7 +758,7 @@ header img{
         text-align: center;
     }
     header {
-        padding: 16px 2%;
+        padding: 4px 2%;
         display: flex;
         justify-content: space-around;
     }
