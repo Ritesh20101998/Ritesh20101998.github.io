@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -6,8 +5,7 @@
     font-family:'Open Sans', 'Helvetica Neue', sans-serif;
     list-style: none;
     text-decoration: none;
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth;    
 }
 
 header{
@@ -102,8 +100,8 @@ header img{
 }
 .home-text{
     width: 100%;
-    margin-left: 30px;
-    margin-top: 80px;
+    margin-left: 20px;
+    margin-top: 70px;
 }
 .home-text>p{
     font-size: 2.5rem;
@@ -611,7 +609,7 @@ header img{
 }
   
 /* Media Query for Mobile View (max-width: 720px) */
-@media (max-width:720px) {
+@media all and (min-width:481px) and (max-width:720px) {
     header {
         padding: 16px 2%;
         flex-direction: column;
@@ -734,6 +732,7 @@ header img{
         margin: auto;
         text-align: center;
     }
+    
     #contact > div {
         flex-direction: column;
     }
@@ -752,7 +751,7 @@ header img{
 }
 
 /* Media Query for Mobile View (max-width: 430px) */
-@media (max-width:430px) {
+@media (max-width:481px) {
     *{
         width: 100%;
         margin: auto;
@@ -760,9 +759,53 @@ header img{
     }
     header {
         padding: 16px 2%;
+        display: flex;
+        justify-content: space-around;
     }
+    #menu-icon{
+        display: block;
+    }
+
+    #nav-menu{
+        position: absolute;
+        top: 0;
+        margin-top: 60px;
+        display: none;
+        width: 50%;
+        background: rgb(255, 255, 255);
+        height: auto;
+        transition: all .50s ease;
+    }
+    #nav-menu a{
+        display: block;
+        margin: 8px 0;
+        padding: 0 25px;
+        transition: all 1 ease;
+    }
+    #nav-menu a.active{
+        color: rgb(63, 63, 63); 
+    }
+
+    #nav-menu a:hover{
+        color: rgb(63, 63, 63);
+        transform: translateY(2px);
+    }
+
+    #nav-menu a.active{
+        color: rgb(10, 10, 10);    
+    }
+
+    #nav-menu.open{
+        width: 100%;
+        top: 70;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
     #home{
-        margin-top: 200px;
+        margin-top: 60px;
         height: 65vh;
     }
     #resume-button-2{
@@ -843,13 +886,18 @@ header img{
         width: 100%;  
     }
     .project-card>div:nth-child(2){
-        width: 90%;
+        width: 100%;
         text-align: center;
         margin: 10px 10px;
         padding: 0 10px;
     }
+    .project-card>div:nth-child(2) a{
+        width: 50%;
+        margin: auto;
+        margin-top: 5px;
+    }
     .deploy-links{
-        border:1px solid red;
+        /* border:1px solid red; */
         display: flex;
         flex-direction: column;
     }
@@ -861,6 +909,9 @@ header img{
     #github-sec{
         margin: auto;
         text-align: center;
+    }
+    .git-img{
+        height: 150px;
     }
     #contact > div {
         flex-direction: column;

@@ -1,4 +1,4 @@
-
+ 
 let menu=document.getElementById("menu-icon");
 let navbar=document.querySelector(".navbar");
 let m=document.querySelector(".main-body")
@@ -39,15 +39,18 @@ function resume(){
     window.open("https://drive.google.com/file/d/1aB0sJXQom6RrLbDu7iAs1ljX-JkDS5iQ/view?usp=sharing")
 }
 
-// let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
-// let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
+const menus = document.querySelectorAll("#nav-menu .nav-link");
 
-// function NewTab() {
-//     window.open(
-//         "https://drive.google.com/file/d/1-OuJtg1UY7gNKb9LxGBAmiV-2Gnzfg0-/view?usp=sharing",
-//         "_blank"
-//     );
-// }
+menus.forEach((menu) => {
+    menu.addEventListener("click", (e) => {
+      // Remove selected class from all size options
+      menus.forEach((menu) => {
+        // menu.classList.remove("active_menu");
+      });
+      // Add active_menu class to the clicked size option
+      menu.classList.add("active_menu");
+    });
+});
 
 function sendEmail(){
     Email.send({
