@@ -101,7 +101,7 @@ header img{
 .home-text{
     width: 100%;
     margin-left: 20px;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 .home-text>p{
     font-size: 2.5rem;
@@ -768,7 +768,7 @@ header img{
 
     #nav-menu{
         position: absolute;
-        top: 0;
+        top: 10px;
         margin-top: 60px;
         display: none;
         width: 50%;
@@ -797,7 +797,7 @@ header img{
 
     #nav-menu.open{
         width: 100%;
-        top: 70;
+        top: 80;
         display: block;
         display: flex;
         flex-direction: column;
