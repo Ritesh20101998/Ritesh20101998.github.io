@@ -8,9 +8,10 @@
     scroll-behavior: smooth;    
 }
 
-header{
+/* Existing CSS code for your header */
+header {
     width: 100%;
-    position: fixed;
+    position: fixed; 
     top: 0;
     right: 0;
     z-index: 1000;
@@ -21,7 +22,9 @@ header{
     padding: 16px 12%;
     transition: all .50s ease;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+  }
+  /* ... (other CSS rules for the header) */
+  
 
 header img{
     height: 30px;

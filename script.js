@@ -1,33 +1,36 @@
-// JavaScript function to toggle the navigation menu
-function toggleMenu() {
-  var navMenu = document.getElementById('nav-menu'); // Get the navigation menu element
+// Check if the screen width is less than 481px
+if (window.innerWidth < 481) {
+  // JavaScript function to toggle the navigation menu
+  function toggleMenu() {
+    var navMenu = document.getElementById('nav-menu'); // Get the navigation menu element
 
-  // Toggle the visibility of the navigation menu
-  if (navMenu.style.display === 'block') {
-    navMenu.style.display = 'none';
-  } else {
-    navMenu.style.display = 'block';
+    // Toggle the visibility of the navigation menu
+    if (navMenu.style.display === 'block') {
+      navMenu.style.display = 'none';
+    } else {
+      navMenu.style.display = 'block';
+    }
   }
-}
 
-// JavaScript function to scroll to the top of the page
-function scrollToTop() {
-  var body = document.body; // Get the body element
-  body.scrollTop = 0; // Scroll to the top of the page
-}
+  // JavaScript function to scroll to the top of the page
+  function scrollToTop() {
+    var body = document.body; // Get the body element
+    body.scrollTop = 0; // Scroll to the top of the page
+  }
 
-// Add a click event listener to the menu icon
-var menuIcon = document.getElementById('menu-icon');
-menuIcon.addEventListener('click', toggleMenu);
+  // Add a click event listener to the menu icon
+  var menuIcon = document.getElementById('menu-icon');
+  menuIcon.addEventListener('click', toggleMenu);
 
-// Add click event listeners to navigation links
-var navLinks = document.querySelectorAll('#nav-menu a');
-navLinks.forEach(function(link) {
-  link.addEventListener('click', function() {
-    toggleMenu(); // Close the navigation menu
-    scrollToTop(); // Scroll to the top of the page
+  // Add click event listeners to navigation links
+  var navLinks = document.querySelectorAll('#nav-menu a');
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      toggleMenu(); // Close the navigation menu
+      scrollToTop(); // Scroll to the top of the page
+    });
   });
-});
+};
 
 
 GitHubCalendar(".calendar", "Ritesh20101998");
