@@ -37,9 +37,55 @@ header img{
 }
 
 #nav-menu{
-    display: flex;
-    float: right;
+    display: none;
     align-items: center;
+    right: 0;
+    transition: all 0.3s;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-top: -40px;
+    padding: 10px 10px 350px 10px;
+    
+    
+}
+
+#main-navbar{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    width: 50%;
+    
+}
+
+#main-navbar>li>button{
+    background-color: teal;
+    border: 0px;
+    padding: 5px 20px;
+    border-radius: 7px;
+    margin-left: 20px;
+    
+}
+#main-navbar>li>button>a{
+    color: white;
+}
+
+#main-navbar>li>a{
+    color: teal;
+    padding: 5px 13px;
+}
+#nav-menu>li:nth-child(1){
+    text-align: end;
+    padding: 10px 30px;
+    font-size: 25px;
+
+}
+#nav-menu>li>a,button>a{
+    text-align: start;
+    font-size: 17px;
+}
+
+#nav-menu>li>button{
+    border-radius: 10px;
 }
 
 #nav-menu a{
@@ -468,6 +514,9 @@ header img{
     padding: 5px;
     border: none;
 }
+.git-img{
+    width: 90%;
+}
 
 /* ****************************************************************************************************** */
 
@@ -528,6 +577,7 @@ header img{
     header {
       padding: 16px 2%;
     }
+    
   
     /* Add tablet view styles here */
     #home > img {
@@ -610,6 +660,12 @@ header img{
       width: 80%;
     }
 }
+@media all and (max-width:850px){
+    #main-navbar{
+        justify-content: space-around;
+        width: 60%;
+    }
+}
   
 /* Media Query for Mobile View (max-width: 720px) */
 @media all and (min-width:481px) and (max-width:720px) {
@@ -623,11 +679,20 @@ header img{
     }
     header > a{
         border-bottom: 1px solid black;
+        /* height: 80px; */
+        width: 100%;
     }
+    
     .navbar{
         flex-direction: column;
         padding: 10px;
         float: left;
+    }
+    #main-navbar{
+        width: 80%;
+        margin-top: 20px;
+        
+
     }
     /* .navbar li{
         display: none;
@@ -764,6 +829,9 @@ header img{
         padding: 4px 2%;
         display: flex;
         justify-content: space-around;
+    }
+    #main-navbar{
+        display: none;
     }
     #menu-icon{
         display: block;
@@ -915,6 +983,7 @@ header img{
     }
     .git-img{
         height: 150px;
+        
     }
     #contact > div {
         flex-direction: column;
