@@ -16,37 +16,35 @@
 <body>
 
   <div id="mySidebar">
-    <button onClick="windowClose()" style="" class="w3-bar-item w3-button w3-large">&times;</button>
-
-    <!-- <a href="#" class="logo"><h2>Ritesh <span style="color: black;">Kothawade</span></h2></a> -->
-
-    <ul id="nav-menu" class="navbar">
-      <li><a href="#" class="active nav-link home active_menu">Home</a></li>
-      <li><a href="#about" class="nav-link about section">About</a></li>
-      <li><a href="#skills-sec" class="nav-link skills">Skills</a></li>
-      <li><a href="#projects-sec" class="nav-link projects">Projects</a></li>
-      <li><a href="#contact" class="nav-link contact">Contact</a></li>
-      <li> <button onclick="resume()" style="border:none; background-color: black;" id="resume-button-1" >
-        <a href="Ritesh-Kothawade-Resume.pdf" target="_blank" class="nav-link resume" id="resume-link-1" download>Resume</a>
-      </button>
-      </li>
-    </ul>
+    
   </div>
 
   <header>
-    <a href="#" class="logo"><h2>Ritesh <span style="color: black;">Kothawade</span></h2></a>
+    <a href="#" class="logo"><h2>Ritesh Kothawade </h2></a>
 
-    <ul id="nav-menu" class="navbar">
-      <li><a href="#" class="active nav-link home active_menu">Home</a></li>
+    <div id="main-navbar">
+      <li><a href="#" class=" nav-link home active_menu">Home</a></li>
       <li><a href="#about" class="nav-link about section">About</a></li>
       <li><a href="#skills-sec" class="nav-link skills">Skills</a></li>
       <li><a href="#projects-sec" class="nav-link projects">Projects</a></li>
       <li><a href="#contact" class="nav-link contact">Contact</a></li>
+      <li> <button onclick="resume()"  id="resume-button-1" >
+        <a href="Ritesh-Kothawade-Resume.pdf" target="_blank" class="nav-link resume" id="resume-link-1" download>Resume</a>
+      </button>
+    </div>
+
+    <div id="nav-menu" class="navbar">
+      <li onclick={CloseSideBar()}>x</li>
+      <li><a href="#" class=" nav-link home active_menu" onclick={CloseSideBar()}>Home</a></li>
+      <li><a href="#about" class="nav-link about section" onclick={CloseSideBar()}>About</a></li>
+      <li><a href="#skills-sec" class="nav-link skills" onclick={CloseSideBar()}>Skills</a></li>
+      <li><a href="#projects-sec" class="nav-link projects" onclick={CloseSideBar()}>Projects</a></li>
+      <li><a href="#contact" class="nav-link contact" onclick={CloseSideBar()}>Contact</a></li>
       <li> <button onclick="resume()" style="border:none; background-color: white;" id="resume-button-1" >
         <a href="Ritesh-Kothawade-Resume.pdf" target="_blank" class="nav-link resume" id="resume-link-1" download>Resume</a>
       </button>
       </li>
-    </ul>
+    </div>
     <a href="#" class="logo bx bx-menu" id="menu-icon" onClick="windowOpen()"><span class="material-symbols-outlined">menu</span></a>
   </header>
 
@@ -407,3 +405,33 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Ritesh SideBar code  -->
+
+<!-- <button onClick="windowClose()" style="" class="w3-bar-item w3-button w3-large">&times;</button> -->
+
+    <!-- <a href="#" class="logo"><h2>Ritesh <span style="color: black;">Kothawade</span></h2></a> -->
+
+    <!-- <ul id="nav-menu" class="navbar">
+      <li><a href="#" class="active nav-link home active_menu">Home</a></li>
+      <li><a href="#about" class="nav-link about section">About</a></li>
+      <li><a href="#skills-sec" class="nav-link skills">Skills</a></li>
+      <li><a href="#projects-sec" class="nav-link projects">Projects</a></li>
+      <li><a href="#contact" class="nav-link contact">Contact</a></li>
+      <li> <button onclick="resume()" style="border:none; background-color: black;" id="resume-button-1" >
+        <a href="Ritesh-Kothawade-Resume.pdf" target="_blank" class="nav-link resume" id="resume-link-1" download>Resume</a>
+      </button>
+      </li>
+    </ul> -->

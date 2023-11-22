@@ -62,11 +62,15 @@ function windowOpen() {
   document.getElementById("mySidebar").style.width = "100%";
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("nav-menu").style.display = "block";
-  document.getElementById("nav-menu").style.backgroundColor = "black";
+  document.getElementById("nav-menu").style.backgroundColor = "rgb(43, 43, 43)";
   document.getElementById("nav-menu").style.color = "white";
 }
 
 function windowClose() {
   console.log("Close")
   document.getElementById("nav-menu").style.display = "none";
+}
+
+const CloseSideBar = ()=>{
+  document.getElementById("nav-menu").style.display="none";
 }
