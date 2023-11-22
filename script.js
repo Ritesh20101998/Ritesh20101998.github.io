@@ -37,7 +37,7 @@ GitHubCalendar(".calendar", "Ritesh20101998");
 GitHubCalendar(".calendar", "Ritesh20101998", { responsive: true });
 
 function resume(){
-    window.open("https://drive.google.com/file/d/1aB0sJXQom6RrLbDu7iAs1ljX-JkDS5iQ/view?usp=sharing")
+    window.open("https://drive.google.com/file/d/1-InWIzmPE2BebOsB9QQ0KF5DTr48NiPz/view?usp=sharing")
 }
 
 function sendEmail(){
